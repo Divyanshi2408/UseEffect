@@ -1,10 +1,29 @@
-import React from 'react'
-import ApiPolling from './Api Polling/ApiPolling'
+import React, { useState } from "react";
+import MouseTracker from "./MouseTracker/MouseTracker";
+import ApiPolling from "./Api Polling/ApiPolling";
 
 const App = () => {
-  return (
-    <ApiPolling/>
-  )
-}
+  const [isTrackerVisible, setIsTrackerVisible] = useState(true);
 
-export default App
+  const toggleTracker = () => {
+    setIsTrackerVisible((prevState) => !prevState);
+  };
+
+  return (
+    <>
+    <ApiPolling/>
+    <div style={{ textAlign: "center", padding: "20px" }}>
+    
+      <h1>Toggle Component Visibility</h1>
+      <button onClick={toggleTracker}>
+        {isTrackerVisible ? "Hide Mouse Tracker" : "Show Mouse Tracker"}
+      </button>
+
+    
+      {isTrackerVisible && <MouseTracker/>}
+    </div>
+    </>
+  );
+};
+
+export default App;
