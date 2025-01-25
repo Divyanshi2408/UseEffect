@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MouseTracker from "./MouseTracker/MouseTracker";
 import ApiPolling from "./Api Polling/ApiPolling";
+import UserProfileForm from "./UserProfileForm/UserProfileForm";
 
 const App = () => {
   const [isTrackerVisible, setIsTrackerVisible] = useState(true);
@@ -22,6 +23,7 @@ const App = () => {
     
       {isTrackerVisible && <MouseTracker/>}
     </div>
+    <UserProfileForm/>
     </>
   );
 };
