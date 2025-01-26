@@ -5,6 +5,7 @@ import UserProfileForm from "./UserProfileForm/UserProfileForm";
 import LazyLoadImages from "./LazyLoadImages/LazyLoadImages";
 import DynamicChart from "./DynamicChart/DynamicChart";
 import DynamicApiPolling from "./DynamicApiPolling/DynamicApiPolling"
+import Dashboard from "./Dashboard/Dashboard"
 
 const App = () => {
   const [isTrackerVisible, setIsTrackerVisible] = useState(true);
@@ -80,6 +81,7 @@ const App = () => {
       </button>
     </div>
     <DynamicApiPolling/>
+    <Dashboard/>
     </>
   );
 };
