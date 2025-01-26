@@ -9,6 +9,7 @@ import Dashboard from "./Dashboard/Dashboard"
 import GlobalSettingsManager from "./GlobalSettingsManager/GlobalSettingsManager";
 import AutoSaveTextEditor from "./AutoSaveTextEditor/AutoSaveTextEditor";
 import BackgroundSyncWithNotifications from "./BackgroundSyncWithNotifications/BackgroundSyncWithNotifications";
+import AutoSave from "./AutoSave/AutoSave";
 
 const App = () => {
   const [isTrackerVisible, setIsTrackerVisible] = useState(true);
@@ -88,6 +89,7 @@ const App = () => {
     <GlobalSettingsManager/>
     <AutoSaveTextEditor/>
     <BackgroundSyncWithNotifications/>
+    <AutoSave/>
     </>
   );
 };
