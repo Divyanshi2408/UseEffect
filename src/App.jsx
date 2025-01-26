@@ -7,6 +7,7 @@ import DynamicChart from "./DynamicChart/DynamicChart";
 import DynamicApiPolling from "./DynamicApiPolling/DynamicApiPolling"
 import Dashboard from "./Dashboard/Dashboard"
 import GlobalSettingsManager from "./GlobalSettingsManager/GlobalSettingsManager";
+import AutoSaveTextEditor from "./AutoSaveTextEditor/AutoSaveTextEditor";
 
 const App = () => {
   const [isTrackerVisible, setIsTrackerVisible] = useState(true);
@@ -84,6 +85,7 @@ const App = () => {
     <DynamicApiPolling/>
     <Dashboard/>
     <GlobalSettingsManager/>
+    <AutoSaveTextEditor/>
     </>
   );
 };
