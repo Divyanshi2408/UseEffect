@@ -6,6 +6,7 @@ import LazyLoadImages from "./LazyLoadImages/LazyLoadImages";
 import DynamicChart from "./DynamicChart/DynamicChart";
 import DynamicApiPolling from "./DynamicApiPolling/DynamicApiPolling"
 import Dashboard from "./Dashboard/Dashboard"
+import GlobalSettingsManager from "./GlobalSettingsManager/GlobalSettingsManager";
 
 const App = () => {
   const [isTrackerVisible, setIsTrackerVisible] = useState(true);
@@ -82,6 +83,7 @@ const App = () => {
     </div>
     <DynamicApiPolling/>
     <Dashboard/>
+    <GlobalSettingsManager/>
     </>
   );
 };
